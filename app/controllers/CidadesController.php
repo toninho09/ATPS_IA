@@ -17,4 +17,15 @@ class CidadesController extends BaseController {
 		return ['status'=>'0','msg'=>'Cidade cadastrada com sucesso.'];
 	}
 	
+	public function deletarHome(){
+		$cidades = Cidades::lists('NOME','ID');
+		return View::make('cidades.apagar')
+		->with('cidades',$cidades);
+	}
+	
+	public function deletar(){
+		$cidade = Input::get('cidade');
+		Cidades::where('ID',$cidade)->delete();
+		return Redirect::route('home');
+	}
 }

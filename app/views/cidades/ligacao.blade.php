@@ -4,8 +4,10 @@
 {{Form::select('cidade2', $cidades)}}<br>
 <label>Peso:</label>
 <input name="peso" id="peso" placeholder="peso" type="number" min="1"></input>
-<br>
+<br><br>
 <button id="cadastrar">Cadastrar</button>
+<br><br>
+<a href="{{route('home')}}">Voltar</a>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){

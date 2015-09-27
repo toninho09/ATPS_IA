@@ -1,7 +1,8 @@
 <label>Nome:</label>
 <input name="nome" id="nome" placeholder="Nome"></input><br>
 <button id="cadastrar">Cadastrar</button>
-
+<br><br>
+<a href="{{route('home')}}">Voltar</a>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
 <script type="text/javascript">
